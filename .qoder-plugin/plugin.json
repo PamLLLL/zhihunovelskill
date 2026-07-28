@@ -1,0 +1,13 @@
+{
+  "name": "zhihu-story-generator",
+  "displayName": "知乎盐选故事生成器",
+  "version": "1.0.0",
+  "description": "Generate publishable Zhihu Salt Select stories with professional writing techniques",
+  "descriptionZh": "一键生成签约级知乎盐选短篇故事，覆盖需求确认到发布导出全流程",
+  "author": { "name": "PamLLLL" },
+  "keywords": ["qoder-plugin", "skill", "zhihu", "writing", "novel"],
+  "category": "content-creation",
+  "tags": ["skill", "writing", "zhihu"],
+  "skills": "./skills/",
+  "commands": "./commands/"
+}
