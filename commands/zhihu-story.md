@@ -1,14 +1,18 @@
 ---
 description: 知乎盐选故事生成器 — 一键生成签约级短篇故事
-allowed-tools: [Read, Write, Bash, AskUserQuestion]
+allowed-tools: Read, Write, Bash, AskUserQuestion
 ---
 
 # 知乎盐选故事生成器
 
 用户触发了知乎故事生成流程。
 
-先读取 `skills/zhihu-story/SKILL.md` 获取完整工作流指令，然后严格按照其中的 Phase 1-4 执行。
+首先读取以下文件获取完整工作流和写作规则：
+1. `/home/liuy405/zhihu-story-generator/skills/zhihu-story/SKILL.md` — 完整工作流指令（Phase 1-4）
+2. `/home/liuy405/zhihu-story-generator/skills/zhihu-story/references/zhihu-editorial.md` — 知乎编辑标准
+3. `/home/liuy405/zhihu-story-generator/skills/zhihu-story/references/writing-style.md` — 写作风格规则
+4. `/home/liuy405/zhihu-story-generator/skills/zhihu-story/references/genre-guides.md` — 类型指南
 
-参考文件在 `skills/zhihu-story/references/` 目录下，按 SKILL.md 中的指示在对应阶段读取。
+然后严格按照 SKILL.md 中的 Phase 1-4 执行。
 
 用户的额外参数：$ARGUMENTS
