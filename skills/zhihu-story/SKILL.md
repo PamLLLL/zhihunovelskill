@@ -91,15 +91,14 @@ Phase 1 需求确认 → Phase 2 概念头脑风暴 → Phase 3 全文生成 →
 
 ## Phase 3 — 全文生成
 
-这是核心阶段。读取以下参考文件：
+这是核心阶段。**只读取以下2个参考文件**（不要多读，节省 context 给正文输出）：
 - `references/anti-detection.md` — **反 AI 检测策略（最高优先级，不可覆盖）**
-- 如果用户在 Phase 1 选了风格档案：读取 `styles/作者名.md` — **风格档案（替代 writing-style.md 的对应维度）**
-- `references/writing-style.md` — 写作风格和去AI味规则（如有风格档案，档案中覆盖的维度以档案为准，未覆盖的维度仍用此文件）
-- `references/zhihu-editorial.md` — 结构要求和节奏控制
-- `references/genre-guides.md` — 对应类型的专属规则
-- `references/zhihu-baokuan-style.md` — 爆款风格模式（导语、段落、钩子、付费墙）
+- `references/writing-style.md` — 写作风格和去AI味规则
+- 如果用户在 Phase 1 选了风格档案：额外读取 `styles/作者名.md`（档案中覆盖的维度以档案为准，未覆盖的维度仍用 writing-style.md）
 
-**优先级**：`anti-detection.md > 风格档案 > writing-style.md > 其他参考文件`
+**不要在此阶段读取** zhihu-editorial.md、zhihu-baokuan-style.md、genre-guides.md、quality-checklist.md——它们的核心规则已内嵌在本文件（SKILL.md）的写作规则中，重复读取会撑满 context 导致生成卡住。
+
+**优先级**：`anti-detection.md > 风格档案 > writing-style.md > SKILL.md 内嵌规则`
 
 ### 写作规则
 
